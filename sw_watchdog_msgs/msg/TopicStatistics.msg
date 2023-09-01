@@ -1,0 +1,18 @@
+# Gather topic statistics (not to be confused with libstatistics_collector)
+std_msgs/Header	header
+
+uint32	number_of_publishers
+
+int32	deadline_requested_count
+bool	deadline_healthy
+int32	liveliness_alive_count
+int32	liveliness_not_alive_count
+bool	liveliness_healthy
+int32	requested_incompatible_qos
+bool	incompatible_qos_healthy
+int32	message_lost_count
+bool	message_lost_healthy
+
+builtin_interfaces/Time		message_received_at
+builtin_interfaces/Time		last_message_source_at
+builtin_interfaces/Duration	message_period
